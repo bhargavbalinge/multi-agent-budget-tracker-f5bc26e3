@@ -1,17 +1,37 @@
 
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Budget Tracker</h1>
 
-{% block content %}
-<section class="hero">
-    <div class="hero-body">
-        <div class="container">
-            <h1 class="title">
-                Welcome to the Budget Tracker
-            </h1>
-            <h2 class="subtitle">
-                Your personal finance companion.
-            </h2>
-        </div>
+    <div class="budget-summary">
+        <h2>Budget Summary</h2>
+        <p>Total Budget: $<span id="total-budget"></span></p>
+        <p>Remaining Budget: $<span id="remaining-budget"></span></p>
     </div>
-</section>
-{% endblock %}
+
+    <div class="expenses">
+        <h2>Expenses</h2>
+        <ul id="expenses-list">
+            <!-- Expenses will be dynamically loaded here -->
+        </ul>
+    </div>
+
+    <div class="add-expense">
+        <h2>Add Expense</h2>
+        <form id="expense-form">
+            <input type="text" id="description" placeholder="Expense Description" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <button type="submit">Add Expense</button>
+        </form>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
