@@ -1,37 +1,20 @@
 
-# Budget Tracker Web App
+# Multi-Agent Budget Tracker
 
-This is a simple web application for tracking your budget, expenses, and income.
+This is a simple budget tracking application built by a multi-agent system.
 
 ## Setup
 
-1.  **Clone the repository:**
+1.  **Install dependencies:**
 
-    ```
-    git clone https://github.com/your-username/budget-tracker.git
-    ```
-
-2.  **Install the dependencies:**
-
-    ```
+    ```bash
     pip install -r requirements.txt
     ```
 
-3.  **Initialize the database:**
+2.  **Run the application:**
 
-    ```
-    python -c "from app import db, app; app.app_context().push(); db.create_all()"
-    ```
-
-4.  **Run the application:**
-
-    ```
+    ```bash
     python app.py
     ```
 
-## Usage
-
-1.  Create an account or log in.
-2.  Define your monthly budget and allocate amounts to different categories.
-3.  Record your expenses and income.
-4.  View reports on your spending habits.
+3.  Open your browser and navigate to `http://127.0.0.1:5000`.
